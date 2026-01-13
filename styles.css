@@ -145,12 +145,30 @@ img {
     gap: 10px;
     font-family: var(--font-primary);
     font-weight: 800;
-    font-size: 24px;
     color: var(--white);
 }
 
 .logo-icon {
     font-size: 28px;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logo-text {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-menu {
@@ -220,6 +238,29 @@ img {
 
 .hero-content {
     animation: fadeInUp 1s ease;
+}
+
+.hero-brand {
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease;
+}
+
+.hero-voi {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 8px;
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(244, 197, 66, 0.5);
+}
+
+.hero-fullname {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 5px;
 }
 
 .hero-title {
@@ -1079,6 +1120,14 @@ img {
         order: -1;
     }
     
+    .hero-voi {
+        font-size: 56px;
+    }
+    
+    .hero-fullname {
+        font-size: 14px;
+    }
+    
     .hero-title {
         font-size: 48px;
     }
@@ -1117,6 +1166,16 @@ img {
 }
 
 @media (max-width: 640px) {
+    .hero-voi {
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+    
+    .hero-fullname {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
     .hero-title {
         font-size: 36px;
     }
